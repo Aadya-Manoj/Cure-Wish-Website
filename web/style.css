@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+#home-section{
+    background: url(images/Group3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 740px;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #5cb85c;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+
+.nav-link {
+    padding: 10px 5px;
+    transition: 0.2
+}
+
+#home-section .home-inner{
+    padding-top: 150px;
+}
+
+#know-more{
+    display:none;
+}

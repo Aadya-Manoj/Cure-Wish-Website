@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+              integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <title>CureWish</title>
+        <link rel="icon" type="image/x-icon" href="images/curewish.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="test.css">
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <div id="home" style="padding-top: 54px;">
+            <nav class="navbar navbar-expand-md fixed-top navbar-light navbar-scroll bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="images/curewish.png" width="35" height="30" class="d-inline-block align-top" alt="">
+                        CureWish
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                            style="background-color: yellowgreen;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html#diet">Diet & Nutrition</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html#Prognosis">Prognosis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="HEcare.html">Heathcares</a>
+                            </li>
+                            <li class="nav-item mr-2">
+              <a class="nav-link text-white" href="GT.html">General Tips</a>
+            </li>
+            <li>
+              <form action="LogoutServlet">
+                <button onclick="location.href='LogoutServlet.java'">Sign Out</button>
+                </form>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+        <section class="background-radial-gradient overflow-hidden">
+
+
+
+            <div class="container-fluid px-5 py-5 d-flex justify-content-center">
+                <div class="col-lg-4 mb-5 mb-lg-0 position-relative">
+                    <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                    <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                    <div class="card mt-5 mb-5" style="background-color: hsl(0, 0%, 0%);
+                         background-image: radial-gradient(1250px circle at 0% 0%,
+                         hsl(0, 0%, 45.9%) 15%,
+                         hsl(0, 0%, 38%) 35%,
+                         hsl(0, 0%, 16%) 75%,
+                         hsl(0, 0%, 12.9%) 80%,
+                         transparent 100%),
+                         radial-gradient(650px circle at 100% 100%,
+                         hsl(0, 0%, 45.9%) 15%,
+                         hsl(0, 0%, 38%) 35%,
+                         hsl(0, 0%, 16%) 75%,
+                         hsl(0, 0%, 12.9%) 80%,
+                         transparent 100%);">
+                        <div class="card-header py-4 px-4  text-center text-white"
+                             style=" background-color: yellowgreen ;font-size: 39px;">
+                            Test your Diabetes
+                        </div>
+
+                        <!--form-->
+                        <form class="mt-3 mb-3">
+
+                            <div class="form-group">
+
+                                <!--age-->
+                                <div class="form-group text-white text-white px-4">
+                                    <label class="form-group" for="age">Enter your Age</label>
+                                    <input type="number" class="form-control" id="age" aria-describedby="ageHelp" name="age"
+                                           placeholder="Enter your age" required>
+                                </div>
+                                <div class="form-group text-white px-4 mb-4">
+                                    <label class="form-group" for="bloodSugar">Enter Fast Sugar level</label>
+                                    <input type="number" class="form-control" id="bloodSugar" aria-describedby="emailHelp" name="bloodSugar"
+                                           placeholder="Enter your fast blood sugar number" required>
+                                </div>
+
+
+                             
+
+
+
+                                <!--submit-->
+                                <div class="row ml-4">
+                                    <button type="button" id="d-button" class="btn btn-outline-success mb-2 mr-4 px-4">Submit</a></button>
+                                    <!--clear-->
+                                    <button type="reset" class="btn btn-outline-warning mb-2 px-4"><a href="" class="text-white"
+                                                                                                      style="text-decoration: none;">Clear all</a></button>
+                                </div>
+                                <!--output-->
+                                <div id="result" class="ml-4 mt-3 rounded d-inline-flex text-dark bg-white ml-4 px-4 "
+                                     style="font-size: 24px;">
+                                    The Results will be show here
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div id="accordion">
+                            <div class="card-header" id="headingOne" style=" background-color: yellowgreen ;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-outline-dark text-white border-white" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                            style="text-decoration: none;">
+                                        Precautions
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body text-white">Maintaining healthy blood sugar levels is important for overall health and well-being, especially if you have diabetes. Here are some precautions to take:<br>
+
+                                    1.Monitor your blood sugar: If you have diabetes, it's important to monitor your blood sugar regularly. Keep a log of your readings and share them with your doctor.<br>
+
+                                    2.Eat a healthy diet: A healthy diet can help maintain healthy blood sugar levels. A diet that is high in fiber, whole grains, fruits, vegetables, and lean proteins can help regulate blood sugar.<br>
+
+                                    3.Limit foods high in sugar: Foods high in sugar, such as candy, soda, and baked goods, should be eaten in moderation.<br>
+
+                                    4.Exercise regularly: Regular physical activity can help improve insulin sensitivity and regulate blood sugar levels. Aim for at least 30 minutes of moderate-intensity exercise, such as brisk walking or cycling, most days of the week.<br>
+
+                                    5.Manage stress: Stress can cause blood sugar levels to fluctuate. Managing stress through relaxation techniques such as deep breathing, meditation, or yoga can help regulate blood sugar levels.<br>
+
+                                    6.Take medications as prescribed: If you have diabetes, it's important to take your medications as prescribed by your doctor.<br>
+
+                                    7.Get enough sleep: Lack of sleep can cause blood sugar levels to rise. Aim for 7-8 hours of sleep per night.<br>
+
+                                    If you have diabetes, it's important to follow your doctor's recommendations for managing your blood sugar levels, such as taking medication as prescribed, monitoring your blood sugar levels regularly, and making lifestyle changes. <br>
+                                    If you have any concerns or notice any symptoms related to high or low blood sugar, such as dizziness or confusion, seek medical attention immediately.<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!--footer-->
+<footer class="text-center text-lg-start text-white bg-dark">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                About us
+                            </h6>
+                            <p>
+                                 Welcome to Cure Wish! We're we provides you the information about health tips and diet plan. Our experienced team strives for excellence in everything we do, and we're committed to providing the best service to our users. Thank you for choosing Cure Wish.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Prognosis</h6>
+            <p>
+              <a class="text-white" href="#Prognosis">Blood oxygen testing</a>
+            </p>
+            <p>
+              <a class="text-white" href="#BP">Blood pressure testing</a>
+            </p>
+            <p>
+              <a class="text-white" href="#DIA">Diabetes testing</a>
+            </p>
+            <p>
+              <a class="text-white" href="#CHO">Cholesterol testing</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> India, Maharashtra, Mumbai</p>
+                            <p><i class="fas fa-envelope mr-3"></i> CureWish@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/" role="button">
+              <i class="fa-brands fa-facebook fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.Twitter.com/" role="button">
+              <i class="fa-brands fa-twitter fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ff0e0e" href="https://www.Google.com/" role="button">
+              <i class="fa-brands fa-google fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: rgb(254, 47, 223)" href="https://www.Instagram.com/"
+              role="button">
+              <i class="fa-brands fa-instagram fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- Linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.Linkedin.com/" role="button">
+              <i class="fa-brands fa-linkedin fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- Github -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://Github.com/vishnuK9/demo.git" role="button">
+              <i class="fa-brands fa-github fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+          </div>
+      </section>
+    </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: yellowgreen; font-size: 35px;">
+             
+                <a class="text-white" href="">CureWish.com</a>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/201b806b33.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+        <!--smooth scrolling-->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="ajax.js">
+        <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+    </body>
+
+</html>
